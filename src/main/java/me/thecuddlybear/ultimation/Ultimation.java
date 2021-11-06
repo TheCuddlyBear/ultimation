@@ -1,5 +1,6 @@
 package me.thecuddlybear.ultimation;
 
+import me.thecuddlybear.ultimation.block.ModBlocks;
 import me.thecuddlybear.ultimation.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -31,6 +32,7 @@ public class Ultimation {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 

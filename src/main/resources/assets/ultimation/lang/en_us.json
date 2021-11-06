@@ -1,5 +1,6 @@
 {
   "item.ultimation.titanium_ingot": "Titanium Ingot",
   "item.ultimation.titanium_nugget": "Titanium Nugget",
-  "item.ultimation.raw_titanium_ore": "Raw Titanium"
+  "item.ultimation.raw_titanium_ore": "Raw Titanium",
+  "block.ultimation.titanium_block": "Titanium Block"
 }
