@@ -2,5 +2,7 @@
   "item.ultimation.titanium_ingot": "Titanium Ingot",
   "item.ultimation.titanium_nugget": "Titanium Nugget",
   "item.ultimation.raw_titanium_ore": "Raw Titanium",
-  "block.ultimation.titanium_block": "Titanium Block"
+  "block.ultimation.titanium_block": "Titanium Block",
+  "block.ultimation.titanium_button": "Titanium Button",
+  "block.ultimation.copper_button": "Copper Button"
 }
