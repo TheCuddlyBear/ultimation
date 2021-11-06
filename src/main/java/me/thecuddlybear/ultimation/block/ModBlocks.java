@@ -6,6 +6,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.StoneButtonBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +21,8 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Ultimation.MOD_ID);
 
     public static final RegistryObject<Block> TITANIUM_BLOCK = registerBlock("titanium_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f)));
+    public static final RegistryObject<StoneButtonBlock> TITANIUM_BUTTON = registerBlock("titanium_button", () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.METAL)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -32,7 +35,7 @@ public class ModBlocks {
     }
 
     public static void register(IEventBus eventBus){
-        register(eventBus);
+        BLOCKS.register(eventBus);
     }
 
 }
