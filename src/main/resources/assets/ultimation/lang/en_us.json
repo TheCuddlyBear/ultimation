@@ -4,5 +4,6 @@
   "item.ultimation.raw_titanium_ore": "Raw Titanium",
   "block.ultimation.titanium_block": "Titanium Block",
   "block.ultimation.titanium_button": "Titanium Button",
-  "block.ultimation.copper_button": "Copper Button"
+  "block.ultimation.copper_button": "Copper Button",
+  "entity.ultimation.copper_golem": "Copper Golem"
 }
