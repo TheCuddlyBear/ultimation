@@ -1,5 +1,6 @@
 package me.thecuddlybear.ultimation.block;
 
+import me.thecuddlybear.ultimation.ModCreativeModeTab;
 import me.thecuddlybear.ultimation.Ultimation;
 import me.thecuddlybear.ultimation.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -26,10 +27,10 @@ public class ModBlocks {
     public static final RegistryObject<StoneButtonBlock> TITANIUM_BUTTON = registerBlock("titanium_button", () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.METAL)), CreativeModeTab.TAB_MISC);
 
     // Copper Button
-    public static final RegistryObject<CustomWeatheringButtonBlock> COPPER_BUTTON = registerBlock("copper_button", () -> new CustomWeatheringButtonBlock(WeatheringCopper.WeatherState.UNAFFECTED, BlockBehaviour.Properties.of(Material.METAL)), CreativeModeTab.TAB_MISC);
-    public static final RegistryObject<CustomWeatheringButtonBlock> EXPOSED_COPPER_BUTTON = registerBlock("exposed_copper_button", () -> new CustomWeatheringButtonBlock(WeatheringCopper.WeatherState.EXPOSED, BlockBehaviour.Properties.of(Material.METAL)), CreativeModeTab.TAB_MISC);
-    public static final RegistryObject<CustomWeatheringButtonBlock> WEATHERED_COPPER_BUTTON = registerBlock("weathered_copper_button", () -> new CustomWeatheringButtonBlock(WeatheringCopper.WeatherState.WEATHERED, BlockBehaviour.Properties.of(Material.METAL)), CreativeModeTab.TAB_MISC);
-    public static final RegistryObject<CustomWeatheringButtonBlock> OXIDIZED_COPPER_BUTTON = registerBlock("oxidized_copper_button", () -> new CustomWeatheringButtonBlock(WeatheringCopper.WeatherState.OXIDIZED, BlockBehaviour.Properties.of(Material.METAL)), CreativeModeTab.TAB_MISC);
+    public static final RegistryObject<CustomWeatheringButtonBlock> COPPER_BUTTON = registerBlock("copper_button", () -> new CustomWeatheringButtonBlock(WeatheringCopper.WeatherState.UNAFFECTED, BlockBehaviour.Properties.of(Material.METAL)), ModCreativeModeTab.ULTIMATION_TAB);
+    public static final RegistryObject<CustomWeatheringButtonBlock> EXPOSED_COPPER_BUTTON = registerBlock("exposed_copper_button", () -> new CustomWeatheringButtonBlock(WeatheringCopper.WeatherState.EXPOSED, BlockBehaviour.Properties.of(Material.METAL)), ModCreativeModeTab.ULTIMATION_TAB);
+    public static final RegistryObject<CustomWeatheringButtonBlock> WEATHERED_COPPER_BUTTON = registerBlock("weathered_copper_button", () -> new CustomWeatheringButtonBlock(WeatheringCopper.WeatherState.WEATHERED, BlockBehaviour.Properties.of(Material.METAL)), ModCreativeModeTab.ULTIMATION_TAB);
+    public static final RegistryObject<CustomWeatheringButtonBlock> OXIDIZED_COPPER_BUTTON = registerBlock("oxidized_copper_button", () -> new CustomWeatheringButtonBlock(WeatheringCopper.WeatherState.OXIDIZED, BlockBehaviour.Properties.of(Material.METAL)), ModCreativeModeTab.ULTIMATION_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
