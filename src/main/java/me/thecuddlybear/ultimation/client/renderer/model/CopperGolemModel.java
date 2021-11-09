@@ -80,6 +80,9 @@ public class CopperGolemModel<T extends CopperGolem> extends EntityModel<T> {
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 		this.head.xRot = headPitch * Mth.DEG_TO_RAD;
 		this.head.yRot = headPitch * Mth.DEG_TO_RAD;
+
+		this.leg_left.xRot = Mth.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
+		this.leg_right.xRot = Mth.sin(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
 	}
 
 	@Override

@@ -37,7 +37,7 @@ public class CopperGolem extends Animal {
     }
 
     public static AttributeSupplier.Builder createAttributes(){
-        return Mob.createMobAttributes().add(Attributes.MAX_HEALTH, 10.0D).add(Attributes.MOVEMENT_SPEED, 0.25D);
+        return Mob.createMobAttributes().add(Attributes.MAX_HEALTH, 10.0D).add(Attributes.MOVEMENT_SPEED, 0.05D);
     }
 
     @Nullable
