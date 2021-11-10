@@ -151,7 +151,7 @@ jar {
     manifest {
         attributes([
                 "Specification-Title"     : "ultimation",
-                "Specification-Vendor"    : "ultimationsareus",
+                "Specification-Vendor"    : "TheCuddlyBear",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,

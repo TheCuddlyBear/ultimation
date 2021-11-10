@@ -83,6 +83,9 @@ public class CopperGolemModel<T extends CopperGolem> extends EntityModel<T> {
 
 		this.leg_left.xRot = Mth.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
 		this.leg_right.xRot = Mth.sin(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
+		this.arm_left.xRot = Mth.cos(limbSwing * 0.6662F) * 1.4F * limbSwingAmount;
+		this.arm_right.xRot = Mth.sin(limbSwing * 0.6662F) * 1.4F  * limbSwingAmount;
+		//TODO: Body swing --> Model changes
 	}
 
 	@Override
