@@ -26,7 +26,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> TITANIUM_BLOCK = registerBlock("titanium_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(12f)), CreativeModeTab.TAB_MISC);
     public static final RegistryObject<StoneButtonBlock> TITANIUM_BUTTON = registerBlock("titanium_button", () -> new StoneButtonBlock(BlockBehaviour.Properties.of(Material.METAL)), CreativeModeTab.TAB_MISC);
 
-    // Copper Button
+    //TODO: fix weathering Copper Button
     public static final RegistryObject<CustomWeatheringButtonBlock> COPPER_BUTTON = registerBlock("copper_button", () -> new CustomWeatheringButtonBlock(WeatheringCopper.WeatherState.UNAFFECTED, BlockBehaviour.Properties.of(Material.METAL)), ModCreativeModeTab.ULTIMATION_TAB);
     public static final RegistryObject<CustomWeatheringButtonBlock> EXPOSED_COPPER_BUTTON = registerBlock("exposed_copper_button", () -> new CustomWeatheringButtonBlock(WeatheringCopper.WeatherState.EXPOSED, BlockBehaviour.Properties.of(Material.METAL)), ModCreativeModeTab.ULTIMATION_TAB);
     public static final RegistryObject<CustomWeatheringButtonBlock> WEATHERED_COPPER_BUTTON = registerBlock("weathered_copper_button", () -> new CustomWeatheringButtonBlock(WeatheringCopper.WeatherState.WEATHERED, BlockBehaviour.Properties.of(Material.METAL)), ModCreativeModeTab.ULTIMATION_TAB);

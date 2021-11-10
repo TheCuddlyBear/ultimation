@@ -13,4 +13,11 @@ public class ModCreativeModeTab {
         }
     };
 
+    public static final CreativeModeTab ULTIMATION_DECORATION = new CreativeModeTab("ultimationDecoration") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.TITANIUM_NUGGET.get());
+        }
+    };
+
 }
