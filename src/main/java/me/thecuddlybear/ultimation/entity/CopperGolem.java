@@ -65,12 +65,12 @@ public class CopperGolem extends Animal {
         return (this.entityData.get(DATA_ID_FLAGS) & pFlagId) != 0;
     }
 
-    private void setFlag(int p_29135_, boolean p_29136_) {
+    private void setFlag(int flag, boolean exists) {
         byte b0 = this.entityData.get(DATA_ID_FLAGS);
-        if (p_29136_) {
-            this.entityData.set(DATA_ID_FLAGS, (byte)(b0 | p_29135_));
+        if (exists) {
+            this.entityData.set(DATA_ID_FLAGS, (byte)(b0 | flag));
         } else {
-            this.entityData.set(DATA_ID_FLAGS, (byte)(b0 & ~p_29135_));
+            this.entityData.set(DATA_ID_FLAGS, (byte)(b0 & ~flag));
         }
 
     }
